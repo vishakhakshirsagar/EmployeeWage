@@ -1,5 +1,6 @@
 package com.EmployeeWage;
 import java.util.Random;
+import java.util.Scanner;
 public class EmpWage {
     public static void main(String[] args)
     {
@@ -25,5 +26,13 @@ public class EmpWage {
         }
         int wage = wagePerHour*empHour; // UC2 to calculate the daily wage for present employee
         System.out.println("Employee Wage for one day is: "+wage);
+        //uc5 to calculate monthly wage of employee
+        System.out.println("Enter number of working days in one month: ");
+        Scanner sc = new Scanner(System.in);
+        int workDays = sc.nextInt();
+        int monthlyWage = wage*workDays;
+        int monthlyHour = empHour*workDays;
+        System.out.println("Employee monthly salary will be : "+monthlyWage);
+
     }
 }
