@@ -8,6 +8,7 @@ public class EmpWage {
         int wagePerHour=20;
         int empHour;
         int empcheck = r.nextInt(3);
+        // UC4 Switch case used to check employee attendance status
         switch(empcheck){ // UC1 to check the Employee is present or absent using RANDOM class.
             case 0:
                 empHour=8;
